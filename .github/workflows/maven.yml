@@ -23,9 +23,5 @@ jobs:
         server-id: github
         server-username: thms-rmb
         server-password: ${{ secrets.GITHUB_TOKEN }}
-    - name: Build with Maven
-      run: mvn package
-    - name: Test with Maven
-      run: mvn test
-    - name: Deploy with Maven
-      run: mvn deploy
+    - name: Build and deploy with Maven
+      run: mvn deploy -e
