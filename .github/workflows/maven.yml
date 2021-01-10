@@ -20,8 +20,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-        server-id: github
-        server-username: thms-rmb
-        server-password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build and deploy with Maven
-      run: mvn deploy -e
+      run: mvn deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
