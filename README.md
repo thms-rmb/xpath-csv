@@ -1,5 +1,7 @@
 # XPath CSV
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/thms-rmb/xpath-csv/Java%20CI%20with%20Maven?label=Test&style=flat-square)
+
 XPath CSV is a CSV library for XPath, XQuery and XSLT.
 
 ## `csv:parse-csv`
